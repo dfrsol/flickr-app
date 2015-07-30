@@ -1,0 +1,62 @@
+.ibm-main-container{
+  ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    li{
+      float:left;
+      margin: 0 15px 30px;
+      width:255px;
+      @media(max-width:600px){
+        width:100%;
+        margin:0 0 15px;
+      }
+    }
+  }
+}
+
+.ibm-flickr-img-container{
+  background-color: $white;
+  padding:10px;
+  color:darken($ibm-gray, 20);
+  font-size:.9em;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow: 0 0 2px 0 darken($ibm-gray, 10);
+  -moz-box-shadow: 0 0 2px 0 darken($ibm-gray, 10);
+  box-shadow: 0 0 2px 0 darken($ibm-gray, 10);
+}
+
+.ibm-flickr-img{
+  background-color:$ibm-gray;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  min-height:150px;
+  margin-bottom:10px;
+}
+
+.ibm-flickr-ownername{
+  color:darken($ibm-gray, 40);
+}
+.ibm-flickr-img-views{
+  float:right;
+}
+
+.ibm-flickr-feed-load-more{
+  background-color: $ibm-purple;
+  color: $white;
+  width:100%;
+  display: block;
+  &:hover, &:focus{
+    background-color: lighten($ibm-purple, 10);
+    color:$white;
+    text-decoration: none;
+  }
+}
+

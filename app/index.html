@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IBM Flickr App</title>
+    <link rel="stylesheet" href="public/dist/styles.css"/>
+</head>
+<body ng-app="flickrApp">
+
+    <div class="row ibm-navigation">
+        <nav class="container">
+            <h1 class="ibm-navbar-logo">
+                <a href="#">IBM Flickr</a>
+            </h1>
+        </nav>
+    </div>
+    <div class="row ibm-main-container" ng-controller="FeedController">
+        <div class="container">
+            <ul>
+                <li feed></li>
+            </ul>
+            <button class="ibm-flickr-feed-load-more btn" ng-if="feedState.loadMoreButton" ng-click="loadFeed()">Load More</button>
+        </div>
+    </div>
+
+    <!-- Vendor -->
+    <!-- end vendor -->
+
+    <!-- Main App File -->
+    <script src="public/dist/app.min.js"></script>
+
+</body>
+</html>
