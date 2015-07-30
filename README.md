@@ -16,6 +16,8 @@ To begin making changes to the application, ensure to run the `Grunt` command
 
 #### To-Do
 * Add visual/code error handling for api errors or nothing being returned from the api
+* Add initial loading state
+* Add loading state when load more is clicked
 * Add Unit Test
 * Add Sorting by Date
 * Add List View
