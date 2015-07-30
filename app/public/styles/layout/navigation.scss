@@ -1,11 +1,13 @@
 .ibm-navigation{
   background-color:$ibm-dark-purple;
+  border-bottom:1px solid $white;
   .ibm-navbar-logo{
+    color:$ibm-gray;
     font-size:1.2em;
     line-height:70px;
-    margin:0;
-    a{
-      color:$ibm-gray;
+    margin:0 0 0 15px;
+    @media(max-width: 760px) {
+      margin:0;
     }
   }
 }

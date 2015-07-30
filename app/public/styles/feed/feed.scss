@@ -7,6 +7,10 @@
       float:left;
       margin: 0 15px 30px;
       width:255px;
+      @media(max-width:992px){
+        width:44%;
+        margin:0 10px 15px;
+      }
       @media(max-width:600px){
         width:100%;
         margin:0 0 15px;
@@ -39,6 +43,15 @@
   background-position: 50% 50%;
   min-height:150px;
   margin-bottom:10px;
+  transition: all 0.3s ease-out;
+  &:hover{
+    -webkit-box-shadow: inset 0 0 10px 0 darken($ibm-gray, 30);
+    -moz-box-shadow:inset 0 0 10px 0 darken($ibm-gray, 30);
+    box-shadow:inset 0 0 10px 0 darken($ibm-gray, 30);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
 }
 
 .ibm-flickr-ownername{
