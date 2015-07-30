@@ -4,6 +4,6 @@
   "appPath": "app",
   "devDependencies": {
     "angular": "~1.4.0",
-    "lodash": "~3.9.3",
+    "lodash": "~3.9.3"
   }
 }
