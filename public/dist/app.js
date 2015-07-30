@@ -434,11 +434,7 @@ typeof define=="function"&&typeof define.amd=="object"&&define.amd?(Yn._=Zn, def
             FeedFactory.loadFeed($scope.feedState.currentPage, $scope.feedState.numItemsToDisplay)
                 .then(function(response){
 
-                    if(response.length < $scope.feedState.numItemsToDisplay) {
-                        $scope.feedState.loadMoreButton = false;
-                    } else {
-                        $scope.feedState.loadMoreButton = true;
-                    }
+                    $scope.feedState.loadMoreButton = response.length >= $scope.feedState.numItemsToDisplay;
 
                     $scope.feedState.items = $scope.feedState.items.concat(response);
                 })
@@ -461,7 +457,7 @@ typeof define=="function"&&typeof define.amd=="object"&&define.amd?(Yn._=Zn, def
 
     var feed = function () {
         return {
-            template: '<li ng-repeat="item in feedState.items track by $index">'+ '<div class="ibm-flickr-img-container">'
+            template: '<li ng-repeat="item in feedState.items track by $index" class="col-xs-12 col-sm-6 col-md-4">'+ '<div class="ibm-flickr-img-container">'
                     + '<a ng-href="{{item.pageUrl}}" target="_blank">'
                         + '<div class="ibm-flickr-img" style="background-image:url(\'{{item.imageUrl}}\')"></div>'
                     + '</a>'
